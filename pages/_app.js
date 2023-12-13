@@ -3,14 +3,17 @@ import GlobalStyle from "../styles";
 import styled from "styled-components";
 
 const StyledNav = styled.nav`
+  align-items: center;
   border-bottom: solid 2px grey;
   padding: 1rem;
+  width: 100%;
 `;
 
 const StyledList = styled.ul`
   list-style: none;
   display: flex;
   gap: 1rem;
+  justify-content: space-around;
 `;
 
 const StyledLink = styled(Link)`
