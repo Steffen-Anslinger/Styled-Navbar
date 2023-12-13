@@ -1,4 +1,7 @@
 import { createGlobalStyle } from "styled-components";
+import { Dancing_Script } from "next/font/google";
+
+const dancingScript = Dancing_Script({ subsets: ["latin"] });
 
 export default createGlobalStyle`
   *,
@@ -9,6 +12,7 @@ export default createGlobalStyle`
 
   body {
     margin: 0;
-    font-family: system-ui;
+    font-family: ${dancingScript.style.fontFamily};
+    font-size: 25px; 
   }
 `;
